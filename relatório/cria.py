@@ -4,4 +4,4 @@ class Relatório:
 
     def inicialize(self):
         with open('../dados/cabeçalho.tex') as f:
-            self.cabeçalho
+            self.cabeçalho = f.head
