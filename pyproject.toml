@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "primeiro projeto"
+version = "0.1.0"
+description = "gerador de relatórios em LATEX"
+authors = ["Kauan Mariani Ferreira"]
+license = "GPL"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
