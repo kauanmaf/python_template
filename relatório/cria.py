@@ -1,12 +1,13 @@
+import os
 class Relatório:
-    def __init__(self, title, author, date) -> None:
+    template_dir = "../dados"
+    def __init__(self, title, author, template='cabeçalho.tex') -> None:
         self.cabeçalho=None
         self.title = title
         self.author = author
-        self.date = date
         self.inicialize()
 
 
     def inicialize(self):
-        with open('../dados/cabeçalho.tex') as f:
+        with open(os.path.join(self.template_dir,'cabeçalho.tex')) as f:
             self.cabeçalho = f.head()
