@@ -1,6 +1,6 @@
 import os
 class Relatório:
-    template_dir = "../dados"
+    template_dir = "dados" #os.path.join(".."dados")
     def __init__(self, title, author, template='cabeçalho.tex') -> None:
         self.cabeçalho=None
         self.title = title
